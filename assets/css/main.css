@@ -85,7 +85,11 @@ input, select, textarea {
 }
 .flex-item {
     padding: 15px;
-	width: 75%;
+	/* width: 75%; */
+}
+
+#interns{
+	width: 200%;
 }
 
 ul.no-bullets{
