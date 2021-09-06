@@ -52,41 +52,47 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Cryptography Puzzle Game Website</h1>
+							<h1>Ant Path Finding Simulation</h1>
 							<ul class="icons flex-item">
-								<li><a href="https://github.com/robgan/cryptograms" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://robgan.github.io/cryptograms" class="icon brands style2 fa-react"><span class="label">React Website</span></a></li>
+								<li><a href="https://github.com/robgan/AntPathFinding" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
 							</ul>
 
 							<p>
-								For COMP 426: Modern Web Development, I was tasked with creating a website from scratch with the freedom to create almost anything I wanted.
-								Given this freedom, I decided to recreate one of my favorite games; a puzzle game where players are trying to decode an encrypted quote, typically from a well known individual such as Alan Turing or Benjamin Frankin.
+								During APPL 101: Exploring Engineering, I worked with a team of 2 other students to create a simulation that modeled something from nature. 
+								We decided to create a simple model of how ants use pheromones to find food and over time, find a shorter and shorter path from the colony to the food source.
+								Within my team, my teammates primarily conducted the research on ant pathfinding behavior and I developed and wrote all the code for the simulation.
 							</p>
 							<p>
-								To create this React website, I used two different APIs. 
-								The first API is a random quote generator to actually get a quote. 
-								The second API is to get information from Wikipedia and provide the player with a short summary of the person the quote is by incase they are unfamilair with the individual.
-								To encrypt the quote, I used a monoalphabetic subsitution cipher.
-								This means that each letter is transformed into a different letter.
-								For example, every "a" could become a "j" and every "j" could become a "c".
-								Although this encryption is not secure whatsoever, it allows a player to use letter frequency analysis and other techniques to discover the plaintext of the message without any complicated calcualtions.
+								I used Matlab to create this simulation utilizing 2D arrays where the each element corresponded to a point that an ant could be in.
+								Using this method meant that the ants were limited to moving in the four cardinal directions.
+								This simulation starts off with 2 parts.
+								The first step of the simulation is to generate a number of "random walks".
+								In these random walks, an ant will incrementally take steps without knowing where the food source is.
+								At each step, they will randomly decide to move up, down, left, or right.
+								This continues until the ant reaches the food source.
+								As the ant is doing this "random walk", it is laying down pheromones which is simulated by an integer in the 2D array.
+								Each time an ant moves into a square, the pheromone count for that square is incremented.
+								As you conduct more and more of these random walks, a pheromone map appears as you can see on the image to the left. 
+								The area of high concentration shows the food source while the area with low concentration shows the ants home or colony.
+								The second step takes the pheromone map and minds a path from high pheromone concentration to low pheromone concentration which creates the shortest path that you can see in the image on the right.
 							</p>
-							<span class="image fit"><img src="images/cryptography.png" alt=""/></span>
-
-							<h2>Cryptography Puzzle Game Website Features</h2>
+							<ul class="flex-container">
+								<span class="image left flex-item"><img src="images/pheromone.png" alt=""/></span>
+								<span class="image right flex-item"><img src="images/path.png" alt=""/></span>
+							</ul>
+							<h2>Ant Pathfinding Simulation Features</h2>
 							<p class="flex-item"> Features include:</p>
 							<ul>
-								<li>React framework</li>
-								<li>RESTful APIs</li>
-								<li>Custom CSS</li>
-								<li>Toggleable light and dark themes</li>
-								<li>Custom quote encryption</li>
+								<li>Matlab simulation</li>
+								<li>2D array</li>
+								<li>Variable "random walks" to show how increased sample sizes improves route length</li>
 							</ul>
 
 							<p class="flex-item">
-								As my first endeavor in creating a website from scratch, I realized how powerful and versatile React can be.
-								Being able to create components and reuse code is such a valuable tool and saves large amount of times, especially when creating larger projects.
-								Although frustrating at first, I learned how to work with APIs to get and send data and will be exploring what other APIs can do in the future.
+								At first, tackling something as complex as ant behavior seemed a very daunting task.
+								However, I found that once we broke it down and made some simplifying assumptions it became much easier to create a model for.
+								Although this model for ant pathfinding behavior is by no means perfect, it shows how you can easily create something that models the natural world pretty well.
+								Even as a simple model, there are so many potential applications for this type of program ranging from the Traveling Salesman problem to identifying the shortest route between two points on a map.
 							</p>
 						</div>
 					</div>

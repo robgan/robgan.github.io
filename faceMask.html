@@ -52,41 +52,45 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Cryptography Puzzle Game Website</h1>
+							<h1>Face Mask Effectiveness Simulation</h1>
 							<ul class="icons flex-item">
-								<li><a href="https://github.com/robgan/cryptograms" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://robgan.github.io/cryptograms" class="icon brands style2 fa-react"><span class="label">React Website</span></a></li>
+								<li><a href="https://github.com/robgan/FaceMask" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
 							</ul>
 
 							<p>
-								For COMP 426: Modern Web Development, I was tasked with creating a website from scratch with the freedom to create almost anything I wanted.
-								Given this freedom, I decided to recreate one of my favorite games; a puzzle game where players are trying to decode an encrypted quote, typically from a well known individual such as Alan Turing or Benjamin Frankin.
+								During APPL 101: Exploring Engineering, I worked with a team of 2 other students to create a simulation that modeled the effectiveness of face masks.
+								This was right at the beginning of the COVID-19 pandemic and so we were interested in how effective different types of facemasks were at keeping out contagions.
+								We conducted research on the production methods of the different facemask types and were able to create 
 							</p>
 							<p>
-								To create this React website, I used two different APIs. 
-								The first API is a random quote generator to actually get a quote. 
-								The second API is to get information from Wikipedia and provide the player with a short summary of the person the quote is by incase they are unfamilair with the individual.
-								To encrypt the quote, I used a monoalphabetic subsitution cipher.
-								This means that each letter is transformed into a different letter.
-								For example, every "a" could become a "j" and every "j" could become a "c".
-								Although this encryption is not secure whatsoever, it allows a player to use letter frequency analysis and other techniques to discover the plaintext of the message without any complicated calcualtions.
+								Matlab was used to create this simulation where we compared N95 and cloth face masks.
+								The face masks were simulated as a layer of inpenetrable material with holes in them that would allow particles to pass through.
+								The difference between the two types of facemasks were the frequency of the holes.
+								In our research, we found that N95 facemasks had less frequent and smaller holes than cloth would and so we modeled N95 as having less frequent holes.
+								Air particles that move according to Brownian motion were generated on one side of the face masks and over time particles would diffuse over to the other side.
+								We measured the number of particles that got through the face mask over time and graphed the results which you can see below.
+								Just as we predicted, N95 masks did a better job of keeping particles out.
+								However, it was interesting that over time, both masks eventually let the same amount of particles across. 
+								This is due to diffusion and over time both masks would balance out regardless of how few holes they had.
 							</p>
-							<span class="image fit"><img src="images/cryptography.png" alt=""/></span>
+							<span class="image fit"><img src="images/faceMask.png" alt=""/></span>
 
-							<h2>Cryptography Puzzle Game Website Features</h2>
+							<h2>Ant Pathfinding Simulation Features</h2>
 							<p class="flex-item"> Features include:</p>
 							<ul>
-								<li>React framework</li>
-								<li>RESTful APIs</li>
-								<li>Custom CSS</li>
-								<li>Toggleable light and dark themes</li>
-								<li>Custom quote encryption</li>
+								<li>Matlab simulation</li>
+								<li>Brownian motion particles</li>
+								<li>Graph how many particles penetrated over time</li>
+								<li>Video of the particles moving over time</li>
 							</ul>
 
 							<p class="flex-item">
-								As my first endeavor in creating a website from scratch, I realized how powerful and versatile React can be.
-								Being able to create components and reuse code is such a valuable tool and saves large amount of times, especially when creating larger projects.
-								Although frustrating at first, I learned how to work with APIs to get and send data and will be exploring what other APIs can do in the future.
+								From the beginning, our goal was to find out whether N95 or even a cloth mask would be sufficient to help you not get sick during the COVId-19 pandemic.
+								Based on our simulation that had many simplifying assumptions, we determined that an N95 mask would be ideal.
+								However, if an N95 mask is not avaiable to you, then a cloth mask would also be sufficient in keeping you safe.
+								Having any mask at all is better than not having one.
+								From this experience, I learned a great deal about how different types of masks are manufactured as well as how I would go about modeling the differences between the two types of masks.
+								
 							</p>
 						</div>
 					</div>
