@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Robert Gan - Hardware Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/jpg" href="images/favicon.svg"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Robert Gan</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutMe.html">About Me</a></li>
+							<li><a href="workExperience.html">Work Experience</a></li>
+							<li><a href="softwareProjects.html">Software Projects</a></li>
+							<li><a href="hardwareProjects.html">Hardware Projects</a></li>
+							<li><a href="photography.html">Photography</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Beatsaber-like Rhythm Game</h1>
+
+							<ul class="flex-container">
+								<span class="image left flex-item"><img src="images/beatSaber.jpg" alt="" /></span>
+								<p class="flex-item">
+									As a final project for APPL 240: Developing Your Sixth Sense: Designing Sensors and Electrical Circuits to Make Measurements I was told to use 3 different sensors to create something.
+									It could be a game, a simulation, or an object but it had to incorporate sensors, use filters in a circuit, and create a program in Labview to read the output of the sensors.
+									Given this freedom, I thought that it would be really fun to create a game similar to the well known virtual reality game called Beat Saber.
+									For those of you that don't know, Beat Saber is a game where a player puts on a VR headset and uses a controller in each hand to swing at blocks flying towards them.
+									The blocks must be swung at from a certain direction and are roughly correlated to the music that is playing.
+									Although I couldn't create a whole VR headset and have the blocks flying towards a players face, I could have a player hold controllers and swing them in a specific direction when specific visual cues occur.
+								</p>
+							</ul>
+
+							<ul class="flex-container">
+								<p class="flex-item">
+									The first step in this project was to generate the visual cues that a player would react to.
+									To do this, I created 9 LEDs where only 1 LED could light up at a time.
+									There are 4 LEDs corresponding to left, right, up, and down for each hand as well as an additional LED for a tap motion where a player would tap a force sensitive resistor.
+									The tap motion added a new mechanic that could challenge experienced rhythm game players.
+								</p>
+								<span class="image right flex-item"><img src="images/frontPanel.png" alt="" /></span>
+							</ul>
+							<ul class="flex-container">
+								<span class="image right flex-item"><img src="images/typicalSignalOutput.png" alt="" /></span>
+								<p class="flex-item">
+									The next challenge was to read the output from the accelerometers and the force sensitive resistor.
+									The accelerometers that I used were 3 axis accelerometers.
+									However, I only needed two axes for this project but that still meant between the two hands there were 4 axes or signal outputs that had to be read into the Labjack.
+								</p>
+							</ul>
+							<ul class="flex-container">
+								<p class="flex-item">
+									Setting up the circuit and utilizing filters to reduce any noise from the sensors wasn't difficult but figuring out how to turn the sensor output along the 4 axes into left, right, up, or down was tricky though.
+									I needed to be able to check if the sensor output was the same as the direction indicated by the LED for the correct hand.
+									To do this, I used arrays to read in the data and find the min and max values of the axis.
+									By determining whether the min occured first or the max occured first, I calculated which direction along that axis the sensor moved and turned it into an integer output.
+									That integer was then compared to the LEDs which each had an integer value associated with them to check if the player swung the controller in the right direction or not and with the correct controller as well.
+									If the player did then they were awarded points.
+								</p>
+								<span class="image right flex-item"><img src="images/labviewProgram.png" alt="" /></span>
+							</ul>
+							<ul class="flex-container">
+								<p class="flex-item">
+									Now that the software and hardware were all linked together, I just had to turn this into a functional game.
+									I used a lasercutter to laser cut plywood to create a box that would store the Labjack, breadboard, and power supply.
+									Then to house the accelerometers and create controllers that a player would use, I used Fusion 360 to design handles.
+									As you can see below, the handles came in two parts, a body and a cap, and had a slot that the accelerometer would sit in.
+									Down the center of the handle was a hole where the wiring for the accelerometers would come out and the signals would be sent to the circuit to be read.
+								</p>
+							</ul>
+
+							<ul class="flex-container">
+								<span class="image fit flex-item"><img src="images/handleCloseup.jpg" alt="" /></span>
+								<span class="image fit flex-item"><img src="images/beatSaberHandles.png" alt="" /></span>
+								<span class="image fit flex-item"><img src="images/circuit.jpg" alt="" /></span>
+
+							</ul>
+							
+
+							<h2>Beatsaber-like Rhythm Game Features</h2>
+							<p class="flex-item"> Features include:</p>
+							<ul>
+								<li>Labview program and UI</li>
+								<li>Labjack to read sensor outputs</li>
+								<li>3 axis accelerometer to measure hand movements</li>
+								<li>Force sensitive resistor to read tap motion</li>
+								<li>3D printed handles to hold accelerometers and are the controllers for the player</li>
+								<li>Custom circuit with filters to reduce noise</li>
+							</ul>
+
+							<p class="flex-item">
+								This project was so much fun and was the first project I created that incorporated both software and hardware.
+								From learning how to use accelerometers to designing my own circuit and writing my own Labview program, it was a great learning experience.
+								The thing that I struggled the most with was creating the Labview program because it was just the thing I had the least practice with.
+								Coming from a Java and C++ background, it was really frustrating because I knew exactly how I would write the code if it was an one of the languages I knew but because it was a graphical interface I had to relearn how to think about loops and if statements and even simple things like addition and subtraction.
+								Despite the many challenges and hurdles along the way it was beautiful to watch all the differnt tools and technologies come together to create something amazing.
+							</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Get in touch</h2>
+							<p>Phone: (919) 809-2066 </p>
+							<p>Email: robgan503@gmail.com</p>
+							<!-- <form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send" class="primary" /></li>
+								</ul>
+							</form> -->
+						</section>
+						<section>
+							<h2>Follow</h2>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/rdgan/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/robgan" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://twitter.com/gobertran" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://facebook.com/robgan11" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://instagram.com/gobertran" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="9198092066" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+								<li><a href="robgan503@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
