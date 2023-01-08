@@ -5,100 +5,115 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Robert Gan - Hardware Projects</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" type="image/jpg" href="images/favicon.svg"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>Robert Gan - Hardware Projects</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" type="image/jpg" href="images/favicon.svg" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Robert Gan</span>
-								</a>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-						</div>
-					</header>
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Robert
+						Gan</span>
+				</a>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="aboutMe.html">About Me</a></li>
-							<li><a href="workExperience.html">Work Experience</a></li>
-							<li><a href="softwareProjects.html">Software Projects</a></li>
-							<li><a href="hardwareProjects.html">Hardware Projects</a></li>
-							<li><a href="photography.html">Photography</a></li>
-						</ul>
-					</nav>
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Cryptography Puzzle Game Website</h1>
-							<ul class="icons flex-item">
-								<li><a href="https://github.com/robgan/cryptograms" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://robgan.github.io/cryptograms" class="icon brands style2 fa-react"><span class="label">React Website</span></a></li>
-							</ul>
+			</div>
+		</header>
 
-							<p>
-								For COMP 426: Modern Web Development, I was tasked with creating a website from scratch with the freedom to create almost anything I wanted.
-								Given this freedom, I decided to recreate one of my favorite games; a puzzle game where players are trying to decode an encrypted quote, typically from a well known individual such as Alan Turing or Benjamin Frankin.
-							</p>
-							<p>
-								To create this React website, I used two different APIs. 
-								The first API is a random quote generator to actually get a quote. 
-								The second API is to get information from Wikipedia and provide the player with a short summary of the person the quote is by incase they are unfamilair with the individual.
-								To encrypt the quote, I used a monoalphabetic subsitution cipher.
-								This means that each letter is transformed into a different letter.
-								For example, every "a" could become a "j" and every "j" could become a "c".
-								Although this encryption is not secure whatsoever, it allows a player to use letter frequency analysis and other techniques to discover the plaintext of the message without any complicated calcualtions.
-							</p>
-							<span class="image fit"><img src="images/cryptography.png" alt=""/></span>
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="workExperience.html">Work Experience</a></li>
+				<li><a href="softwareProjects.html">Software Projects</a></li>
+				<li><a href="hardwareProjects.html">Hardware Projects</a></li>
+			</ul>
+		</nav>
 
-							<h2>Cryptography Puzzle Game Website Features</h2>
-							<p class="flex-item"> Features include:</p>
-							<ul>
-								<li>React framework</li>
-								<li>RESTful APIs</li>
-								<li>Custom CSS</li>
-								<li>Toggleable light and dark themes</li>
-								<li>Custom quote encryption</li>
-							</ul>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>Cryptography Puzzle Game Website</h1>
+				<ul class="icons flex-item">
+					<li><a href="https://github.com/robgan/cryptograms" class="icon brands style2 fa-github"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://robgan.github.io/cryptograms" class="icon brands style2 fa-react"><span
+								class="label">React Website</span></a></li>
+				</ul>
 
-							<p class="flex-item">
-								As my first endeavor in creating a website from scratch, I realized how powerful and versatile React can be.
-								Being able to create components and reuse code is such a valuable tool and saves large amount of times, especially when creating larger projects.
-								Although frustrating at first, I learned how to work with APIs to get and send data and will be exploring what other APIs can do in the future.
-							</p>
-						</div>
-					</div>
+				<p>
+					For COMP 426: Modern Web Development, I was tasked with creating a website from scratch with the
+					freedom to create almost anything I wanted.
+					Given this freedom, I decided to recreate one of my favorite games; a puzzle game where players are
+					trying to decode an encrypted quote, typically from a well known individual such as Alan Turing or
+					Benjamin Frankin.
+				</p>
+				<p>
+					To create this React website, I used two different APIs.
+					The first API is a random quote generator to actually get a quote.
+					The second API is to get information from Wikipedia and provide the player with a short summary of
+					the person the quote is by incase they are unfamilair with the individual.
+					To encrypt the quote, I used a monoalphabetic subsitution cipher.
+					This means that each letter is transformed into a different letter.
+					For example, every "a" could become a "j" and every "j" could become a "c".
+					Although this encryption is not secure whatsoever, it allows a player to use letter frequency
+					analysis and other techniques to discover the plaintext of the message without any complicated
+					calcualtions.
+				</p>
+				<span class="image fit"><img src="images/cryptography.png" alt="" /></span>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<section>
-							<h2>Get in touch</h2>
-							<p>Phone: (919) 809-2066 </p>
-							<p>Email: robgan503@gmail.com</p>
-							<!-- <form method="post" action="#">
+				<h2>Cryptography Puzzle Game Website Features</h2>
+				<p class="flex-item"> Features include:</p>
+				<ul>
+					<li>React framework</li>
+					<li>RESTful APIs</li>
+					<li>Custom CSS</li>
+					<li>Toggleable light and dark themes</li>
+					<li>Custom quote encryption</li>
+				</ul>
+
+				<p class="flex-item">
+					As my first endeavor in creating a website from scratch, I realized how powerful and versatile React
+					can be.
+					Being able to create components and reuse code is such a valuable tool and saves large amount of
+					times, especially when creating larger projects.
+					Although frustrating at first, I learned how to work with APIs to get and send data and will be
+					exploring what other APIs can do in the future.
+				</p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<p>Phone: (919) 809-2066 </p>
+					<p>Email: robgan503@gmail.com</p>
+					<!-- <form method="post" action="#">
 								<div class="fields">
 									<div class="field half">
 										<input type="text" name="name" id="name" placeholder="Name" />
@@ -114,33 +129,42 @@
 									<li><input type="submit" value="Send" class="primary" /></li>
 								</ul>
 							</form> -->
-						</section>
-						<section>
-							<h2>Follow</h2>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/rdgan/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/robgan" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://twitter.com/gobertran" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://facebook.com/robgan11" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://instagram.com/gobertran" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="9198092066" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-								<li><a href="robgan503@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</section>
-						<ul class="copyright">
-							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
-
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/rdgan/" class="icon brands style2 fa-linkedin"><span
+									class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/robgan" class="icon brands style2 fa-github"><span
+									class="label">GitHub</span></a></li>
+						<li><a href="https://twitter.com/gobertran" class="icon brands style2 fa-twitter"><span
+									class="label">Twitter</span></a></li>
+						<li><a href="https://facebook.com/robgan11" class="icon brands style2 fa-facebook-f"><span
+									class="label">Facebook</span></a></li>
+						<li><a href="https://instagram.com/gobertran" class="icon brands style2 fa-instagram"><span
+									class="label">Instagram</span></a></li>
+						<li><a href="9198092066" class="icon solid style2 fa-phone"><span class="label">Phone</span></a>
+						</li>
+						<li><a href="robgan503@gmail.com" class="icon solid style2 fa-envelope"><span
+									class="label">Email</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
 			</div>
+		</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
