@@ -28,7 +28,7 @@ function Work() {
                     <a
                       href="https://www.amazon.com"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       www.amazon.com
                     </a>
@@ -83,7 +83,7 @@ function Work() {
                     <a
                       href="https://www.sas.com"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       www.sas.com
                     </a>
@@ -133,7 +133,7 @@ function Work() {
                     <a
                       href="https://cs.unc.edu"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       cs.unc.edu
                     </a>
