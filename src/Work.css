@@ -1,0 +1,120 @@
+#work {
+  width: 92%;
+  margin: auto;
+  max-width: 120rem;
+}
+
+.title span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info span {
+  padding: 0px 5px 0px 2px;
+}
+
+span a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.accordion {
+  --bs-accordion-border-color: none !important;
+  --bs-accordion-btn-focus-border-color: none !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e) !important;
+  --bs-accordion-active-color: none !important;
+  --bs-accordion-bg: none !important;
+  overflow: hidden;
+}
+
+.accordion-button,
+.accordion-collapse {
+  margin: 15px 0px;
+  background-color: #fddd5c !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.accordion-button.collapsed {
+  background-color: #fdfd97 !important;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 5px 15px 0px;
+}
+
+.info {
+  justify-content: start;
+}
+
+.desc {
+  padding: 15px 0px;
+  display: flex;
+}
+
+.expanded {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 0 !important;
+}
+
+.technologies > li {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #fdfd97;
+  margin: 5px;
+  display: inline-block;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  margin-left: 15px;
+  max-height: 150px;
+}
+
+svg {
+  pointer-events: none;
+}
+
+.prof {
+  font-size: 4vw;
+  line-height: 1.1em;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 15px;
+}
+
+.prof:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  height: 5px;
+  width: 45vw;
+  background: #facf0f;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 688px) {
+  .time,
+  .logo {
+    display: none;
+  }
+
+  .prof {
+    font-size: 8vw;
+  }
+}
