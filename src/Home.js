@@ -15,15 +15,17 @@ function Home() {
     <div class="jumbotron" id="home">
       <div>
         <h1 class="name">
-          Hi, I'm <span style={{ color: "#4DB8FF" }}>Robert Gan</span>
+          Hi, I'm
+          <span> Robert</span>
+          <span> Gan</span>
         </h1>
         <h3 class="subtitle">
-          Software Engineer from North Carolina solving modern problems with
-          modern technology
+          <span>Software Engineer </span>from North Carolina solving modern
+          problems with modern technology
         </h3>
       </div>
       <div class="down-arrow" onClick={handleClickScroll}>
-        <FontAwesomeIcon icon="fa-solid fa-angle-down" />
+        <FontAwesomeIcon icon="fa-solid fa-angle-down" inverse />
       </div>
     </div>
   );

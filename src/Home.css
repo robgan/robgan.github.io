@@ -11,7 +11,7 @@ h3 {
 }
 
 .jumbotron {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,19 +20,35 @@ h3 {
 
 .name {
   font-size: 8vw;
+  position: relative;
+}
+
+.name span {
+  color: transparent;
+  -webkit-text-stroke: 2px #4db8ff;
 }
 
 .subtitle {
   font-size: 1.5vw;
 }
 
+.subtitle span {
+  color: #f97068;
+}
+
 .down-arrow {
+  border-radius: 10px;
   position: absolute;
   bottom: 2rem;
   right: 50%;
   animation: bobble 1s infinite alternate;
   cursor: pointer;
   font-size: 24px;
+}
+
+svg {
+  background-color: #e0e0e2;
+  border-radius: 3px;
 }
 
 @keyframes bobble {
