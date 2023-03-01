@@ -30,7 +30,9 @@ function Projects() {
               <li>Bootstrap</li>
               <li>Sponsor Authentication</li>
             </ul>
-            <a href="https://www.pearlhacks.com">Link</a>
+            <a class="link" href="https://www.pearlhacks.com">
+              Website
+            </a>
           </div>
         </div>
         <div class="project">
@@ -62,6 +64,12 @@ function Projects() {
               <li>Authentication</li>
               <li>Figma</li>
             </ul>
+            <a class="link" href="https://github.com/gda975/JustInTime">
+              Github
+            </a>
+            <a class="link" href="https://just-in-time-5698c.web.app/">
+              Admin Console
+            </a>
           </div>
         </div>
         <div class="project">
@@ -205,7 +213,9 @@ function Projects() {
               <li>CSS</li>
               <li>Light and Dark Mode</li>
             </ul>
-            <a href="https://robgan.github.io/cryptograms">Link</a>
+            <a class="link" href="https://robgan.github.io/cryptograms">
+              Website
+            </a>
           </div>
         </div>
       </div>

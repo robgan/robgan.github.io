@@ -6,7 +6,7 @@ function Nav() {
     <div class="header" id="nav">
       <div class="left">
         <div class="branding">
-          <h1>Robert Gan</h1>
+          <img src={require("./assets/images/favicon.svg")} alt="logo"></img>
         </div>
       </div>
       <div class="center">
@@ -15,17 +15,29 @@ function Nav() {
             <li class="nav-item">
               <a href="#nav">Home</a>
             </li>
-            <li class="nav-item">
-              <a href="#aboutme">| About Me</a>
+            <li>
+              <h5>|</h5>
             </li>
             <li class="nav-item">
-              <a href="#projects">| Projects</a>
+              <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+              <h5>|</h5>
             </li>
             <li class="nav-item">
-              <a href="#work">| Experience</a>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <h5>|</h5>
             </li>
             <li class="nav-item">
-              <a href="#contact">| Contact</a>
+              <a href="#work">Experience</a>
+            </li>
+            <li>
+              <h5>|</h5>
+            </li>
+            <li class="nav-item">
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

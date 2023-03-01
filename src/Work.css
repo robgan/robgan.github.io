@@ -31,13 +31,13 @@ span a {
 .accordion-button,
 .accordion-collapse {
   margin: 15px 0px;
-  background-color: #fddd5c !important;
+  background-color: #e0e0e2 !important;
   border-radius: 10px !important;
   overflow: hidden;
 }
 
 .accordion-button.collapsed {
-  background-color: #fdfd97 !important;
+  background-color: #4db8ff !important;
 }
 
 .title {
@@ -71,7 +71,7 @@ ul {
 .technologies > li {
   padding: 5px 15px;
   border-radius: 10px;
-  background-color: #fdfd97;
+  background-color: #4db8ff;
   margin: 5px;
   display: inline-block;
 }
@@ -102,7 +102,7 @@ svg {
   top: calc(100% + 0.5rem);
   height: 5px;
   width: 45vw;
-  background: #facf0f;
+  background: #4db8ff;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;

@@ -19,7 +19,7 @@ root.render(
     <Nav />
     <Home />
     <AboutMe />
-    <Projects />
     <Work />
+    <Projects />
   </React.StrictMode>
 );

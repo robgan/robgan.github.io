@@ -14,16 +14,16 @@ function Home() {
   return (
     <div class="jumbotron" id="home">
       <div>
-        <div class="namesub">
-          <h1 class="name">Hi, I'm Robert Gan</h1>
-          <h3 class="subtitle">
-            Software Engineer from North Carolina solving modern problems with
-            modern technology
-          </h3>
-        </div>
-        <div class="down-arrow" onClick={handleClickScroll}>
-          <FontAwesomeIcon icon="fa-solid fa-angle-down" />
-        </div>
+        <h1 class="name">
+          Hi, I'm <span style={{ color: "#4DB8FF" }}>Robert Gan</span>
+        </h1>
+        <h3 class="subtitle">
+          Software Engineer from North Carolina solving modern problems with
+          modern technology
+        </h3>
+      </div>
+      <div class="down-arrow" onClick={handleClickScroll}>
+        <FontAwesomeIcon icon="fa-solid fa-angle-down" />
       </div>
     </div>
   );

@@ -13,7 +13,7 @@
   top: calc(100% + 0.5rem);
   height: 5px;
   width: 15vw;
-  background: #f45b69;
+  background: #f97068;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -57,20 +57,23 @@
   font-weight: bold;
 }
 
-.project-content a {
+.link {
   padding: 5px 30px;
   border-radius: 10px;
-  background-color: #ee3848;
-  color: #a3d5ff;
+  background-color: transparent;
+  border: 2px solid #e0e0e2;
+  color: #e0e0e2;
   margin: 5px;
   display: inline-block;
   font-size: large;
   text-decoration: none;
 }
 
-.project-content a:hover {
+.link:hover {
   transform: scale(1.1);
-  color: #a3d5ff;
+  background-color: #e0e0e2;
+  border: 2px solid #e0e0e2;
+  color: #030303;
 }
 
 .project-content p {
@@ -84,14 +87,16 @@
 }
 
 .software-tag {
-  background-color: #f45b69;
+  background-color: #f97068;
+  color: #030303;
   border-radius: 10px;
   padding: 5px 15px;
   margin-right: 15px;
 }
 
 .hardware-tag {
-  background-color: #275dad;
+  background-color: #4db8ff;
+  color: #030303;
   border-radius: 10px;
   padding: 5px 15px;
   margin-right: 15px;
@@ -100,7 +105,8 @@
 .tech > li {
   padding: 5px 15px;
   border-radius: 10px;
-  background-color: #f45b69;
+  background-color: #e0e0e2;
+  color: #030303;
   margin: 5px;
   display: inline-block;
   font-size: large;

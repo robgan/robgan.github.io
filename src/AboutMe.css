@@ -22,7 +22,7 @@ ul {
   top: calc(100% + 0.5rem);
   height: 5px;
   width: 20vw;
-  background: #275dad;
+  background: #f97068;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -57,21 +57,22 @@ ul {
 .skills > li {
   padding: 5px 15px;
   border-radius: 10px;
-  background-color: #a3d5ff;
+  background-color: #e0e0e2;
+  color: #030303;
   margin: 5px;
   display: inline-block;
   font-size: large;
 }
 
 .text-block {
-  background-color: #275dad;
+  background-color: #f97068;
   border-radius: 10px;
   padding: 15px;
 }
 
 .text {
   text-align: left;
-  color: #dbe2ef;
+  color: #030303;
 }
 
 @media only screen and (max-width: 992px) {
