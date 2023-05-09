@@ -1,7 +1,5 @@
 body,
 html {
-  /* background: #dbe2ef !important; */
-  /* background-image: url("./assets/images/leaf fade.svg") !important; */
   height: 100%;
 }
 
@@ -15,7 +13,6 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-image: url("./assets/images/leaf.svg") !important; */
 }
 
 .name {
@@ -26,6 +23,16 @@ h3 {
 .name span {
   color: transparent;
   -webkit-text-stroke: 2px #4db8ff;
+  animation: slide-in 5s;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .subtitle {

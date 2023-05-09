@@ -2,6 +2,7 @@ ul {
   list-style: disc;
   margin: 0;
   padding: 0;
+  margin-bottom: 0 !important;
 }
 
 li a {
@@ -35,10 +36,6 @@ li a:hover {
 .branding {
   display: flex;
   align-items: center;
-}
-
-ul {
-  margin-bottom: 0 !important;
 }
 
 .nav > ul > li {

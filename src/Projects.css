@@ -74,6 +74,7 @@
   background-color: #e0e0e2;
   border: 2px solid #e0e0e2;
   color: #030303;
+  transition: all 0.2s ease-in-out;
 }
 
 .project-content p {

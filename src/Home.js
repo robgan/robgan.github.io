@@ -20,8 +20,8 @@ function Home() {
           <span> Gan</span>
         </h1>
         <h3 class="subtitle">
-          <span>Software Engineer </span>from North Carolina solving modern
-          problems with modern technology
+          <span>Software Engineer </span> and
+          <span> Maker </span> from North Carolina
         </h3>
       </div>
       <div class="down-arrow" onClick={handleClickScroll}>
