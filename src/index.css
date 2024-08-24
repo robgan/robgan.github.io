@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Noto");
+
+body {
+  margin: 0;
+  font-family: "Noto", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black !important;
+  background-color: #f2ecdb !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.btn {
+  background-color: #3f3f8c !important;
+  border: none !important;
+}
+
+.btn:hover {
+  background-color: #272757 !important;
+}

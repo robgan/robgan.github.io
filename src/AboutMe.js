@@ -1,96 +1,85 @@
 import * as React from "react";
 import "./AboutMe.css";
+import { Col, Container, Row } from "react-bootstrap";
 
 function AboutMe() {
   return (
-    <div id="aboutme">
-      <h1 class="aboutme">About Me</h1>
-      <div class="flex">
-        <div class="left-col">
-          <h3>Get to know me!</h3>
-          <div class="text-block">
-            <p class="text">
-              I’m a recent graduate of the University of North Carolina at
-              Chapel Hill and I am a software engineer with a passion for
-              creating intuitive and efficient systems.
-            </p>
-            <p class="text">
-              I have previous experience as a software developemtn engineer
-              intern at both SAS and Amazon Whole Foods Market, where I worked
-              on exciting projects related to data visualization and scale
-              device management.
-            </p>
-            <p class="text">
-              At SAS, I helped develop and improve their data visualization
-              tool, which gave me an understanding of how to create clear and
-              compelling visualizations that can help people better understand
-              complex data.
-            </p>
-            <p class="text">
-              At Amazon WFM, I worked on a project to develop a device
-              management system that could scale efficiently with the growing
-              needs of the company. These experiences have taught me the
-              importance of collaboration, attention to detail, and creating
-              solutions that are scalable and intuitive.
-            </p>
-            <p class="text">
-              Outside of the office I’m designing new things to 3D print,
-              playing volleyball, travelling the world, or watching a movie or
-              TV show.
-            </p>
-          </div>
-          <img
-            src={require("./assets/images/headshot.jpg")}
-            alt="headshot"
-            class="headshot"
-          ></img>
-        </div>
-        <div class="right-col">
-          <h3>Education</h3>
-          <div class="text-block">
-            <p class="text">
-              In 2022, I graduated from the University of North Carolina at
-              Chapel Hill with a Bachelor of Science degree in Computer Science.
-              During my time at UNC-CH, I also pursued minors in Data Science
-              and Applied Sciences and Engineering, which allowed me to gain a
-              deeper understanding of the intersection between technology and
-              other fields. I was fortunate to have access to some of the most
-              innovative professors and state-of-the-art facilities, which
-              helped me hone my technical skills and develop a passion for
-              creating solutions that can positively impact people's lives. My
-              education has provided me with a strong foundation in programming
-              languages, data analysis, and software engineering principles,
-              which I look forward to applying in my future career.
-            </p>
-          </div>
-          <img
-            class="school"
-            alt=" logo"
-            src="https://identity2.sites.unc.edu/wp-content/uploads/sites/885/2019/01/centered_logo.png"
-          ></img>
-          <h3>Skills</h3>
-          <div class="text-block">
-            <ul class="skills">
-              <li>AWS</li>
-              <li>Java</li>
-              <li>C++</li>
-              <li>HTMl</li>
-              <li>CSS</li>
-              <li>Python</li>
-              <li>React</li>
-              <li>Javascript</li>
-              <li>Unit Testing</li>
-              <li>Databases</li>
-              <li>Git</li>
-              <li>Github</li>
-              <li>Smithy</li>
-              <li>Dagger</li>
-              <li>MATLAB</li>
-              <li>3D Printing</li>
+    <div>
+      <Container>
+        <h1>About Me</h1>
+        <p>
+          Hi I'm Robert Gan a Software Developer based in Austin, TX. A recent
+          grad of UNC-Chapel Hill, I studied Computer Science and minored in
+          Applied Sciences and Engineering and Data Science. I'm an avid
+          traveller, collector of knicknacks, and enjoyer of the xkcd webcomic.
+          I like working out on occasion, playing video games, and trying to
+          cook something tasty.
+        </p>
+        <p>
+          Right now I'm at Amazon working to protect child and teen privacy.
+        </p>
+      </Container>
+      <Container>
+        <Row>
+          <Col lg={6}>
+            <h1>Work</h1>
+
+            <ul>
+              <h3>Amazon</h3>
+              <li>
+                <div className="section">
+                  <p className="weight-normal">Software Development Engineer</p>
+                  <p>SDO Privacy: Child and Teen</p>
+                  <p className="weight-light">2024-Present</p>
+                </div>
+              </li>
+              <li>
+                <div className="section">
+                  <p className="weight-bold">Software Development Intern</p>
+                  <p>WFM: Signs and Scales</p>
+                  <p className="weight-light">2022</p>
+                </div>
+              </li>
             </ul>
-          </div>
-        </div>
-      </div>
+
+            <ul>
+              <h3>SAS</h3>
+              <li>
+                <div className="section">
+                  <p className="weight-bold">Software Development Intern</p>
+                  <p>Business Graphics</p>
+                  <p className="weight-light">2021-2022</p>
+                </div>
+              </li>
+            </ul>
+
+            <ul>
+              <h3>Pearlhacks</h3>
+              <li>
+                <div className="section">
+                  <p className="weight-bold">Director of Technology</p>
+                  <p className="weight-light">2021-2022</p>
+                </div>
+              </li>
+            </ul>
+          </Col>
+          <Col lg={6}>
+            <h1>Education</h1>
+            <ul>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <li>
+                <div className="section">
+                  <p className="weight-bold">
+                    University of North Carolina - Chapel Hill, Chapel Hill, USA
+                  </p>
+                  <p>Minors: Applied Sciences and Engineering & Data Science</p>
+                  <p className="weight-light">2019-2022</p>
+                </div>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

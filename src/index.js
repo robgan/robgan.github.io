@@ -1,29 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Nav from "./Nav";
-import Home from "./Home";
-import AboutMe from "./AboutMe";
-import Projects from "./Projects";
-import Work from "./Work";
-import Contact from "./Contact";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-
-library.add(fas);
-library.add(fab);
+import Projects from "./Projects";
+import Home from "./Home";
+import Navigation from "./Nav";
+import AboutMe from "./AboutMe";
+import Contact from "./Contact";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Nav />
-    <Home />
-    <AboutMe />
-    <Work />
-    <Projects />
-    <Contact />
+    <HashRouter>
+      <Navigation />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </HashRouter>
   </React.StrictMode>
 );

@@ -1,35 +1,35 @@
 import * as React from "react";
 import "./Contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { Button, Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
-    <div id="contact">
-      <div class="left-contact">
-        <img src={require("./assets/images/favicon.svg")} alt="logo"></img>
-      </div>
-      <div class="right-contact">
-        <h1>Contact Me</h1>
-        <p>robgan503@gmail.com</p>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/rdgan">
-              <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.github.com/rdgan">
-              <FontAwesomeIcon icon="fa-brands fa-github" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/gobertran">
-              <FontAwesomeIcon icon="fa-brands fa-instagram" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <Container>
+      <h1>Contact</h1>
+      <ul>
+        <li>Email: robgan503@gmail.com</li>
+        <li>
+          <Button
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.github.com/robgan"
+          >
+            Github <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          </Button>
+        </li>
+        <li>
+          <Button
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/rdgan/"
+          >
+            LinkedIn <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          </Button>
+        </li>
+      </ul>
+    </Container>
   );
 }
 export default Contact;
